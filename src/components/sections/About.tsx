@@ -163,8 +163,9 @@ export function About() {
                 </a>
 
                 <a
-                  href="/Ayush_Kumar_resume.pdf"
-                  download="Ayush_Kumar_Resume.pdf"
+                  href="./Ayush_Kumar_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold tracking-wide border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all active:scale-95"
                 >
                   View Resume
