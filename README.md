@@ -1,111 +1,179 @@
 # 👋 Ayush Kumar | Developer Portfolio
 
-A modern, responsive, and production-ready portfolio built using React, TypeScript, Vite, Tailwind CSS, and Framer Motion to showcase my projects, technical skills, education, and achievements.
+A modern, responsive, and interactive personal portfolio built with **React, TypeScript, Vite, Tailwind CSS, and Framer Motion** to showcase my projects, technical skills, education, and achievements.
+
+---
 
 ## 🌐 Live Demo
 
-[View Live Portfolio](https://feasto-admin-567d.onrender.com) *(Update with your primary custom domain when active)*
+🔗 **Portfolio:** https://ayush-portfolio-3yan.onrender.com
 
 ---
 
-## 👨‍💻 About Me
+## 👨‍💻 About
 
-I'm **Ayush Kumar**, a Fourth Year B.Tech Information Technology student at **IIIT Bhubaneswar**.
+Hi, I'm **Ayush Kumar**, a Fourth Year **B.Tech Information Technology** student at **IIIT Bhubaneswar**.
 
-I enjoy building scalable full-stack web applications using the MERN Stack, solving Data Structures & Algorithms problems in Java, and exploring Artificial Intelligence & Machine Learning.
+I am passionate about building scalable full-stack web applications using the **MERN Stack**, solving **Data Structures & Algorithms** problems in Java, and exploring **Artificial Intelligence & Machine Learning**.
 
-Currently looking for **Software Development Engineer (SDE) Internship** and **Full-Time Opportunities**.
+Currently looking for **Software Development Engineer (SDE)** Internship and Full-Time opportunities.
 
 ---
 
-## 🚀 Features
+# ✨ Features
 
-* **Dual Theme Support:** Fully integrated system-preferred and manual Light/Dark mode transitions.
-* **Fluid Motion:** Physics-based layout transitions and stagger animations powered by Framer Motion.
-* **Performance First:** Zero-runtime dynamic style generation with Tailwind CSS and fully optimized, chunk-split code splitting using Vite.
-* **Dynamic Data Hydration:** Seamless updates via a structured centralized portfolio configuration file.
-* **Interactive Modals:** Dedicated overlay case-studies with embedded metrics for micro-analysis of featured applications.
-* **Modern Accessibility:** Responsive design patterns guaranteeing clean layout ratios across extreme mobile devices and wide desktops.
+- Modern and responsive UI
+- Light & Dark theme
+- Smooth animations using Framer Motion
+- Mobile-first responsive design
+- Project showcase with live demos
+- Skills, education and achievements section
+- Resume download
+- Contact section
+- Optimized performance with Vite
 
 ---
 
 # 🛠 Tech Stack
 
-### Frontend
-* React 18 / TypeScript
-* Tailwind CSS (Class-driven theme layers)
-* Framer Motion (Viewport-driven orchestrations)
-* HTML5 / CSS3 / JavaScript (ESNext)
+## Frontend
 
-### Backend
-* Node.js / Express.js
-* MongoDB Architecture
-* RESTful API Implementation
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
 
-### Programming Languages
-* Java (Core structures & Advanced OOP)
-* JavaScript / TypeScript
-* Python
+## Backend
 
-### Tools & Infrastructure
-* Git / GitHub Version Tracking
-* Vite Build Engine
-* Render Cloud Hosting
-* Cloudinary Media Management
+- Node.js
+- Express.js
+- MongoDB
+- REST APIs
+
+## Programming Languages
+
+- Java
+- JavaScript
+- TypeScript
+- Python
+
+## Tools
+
+- Git
+- GitHub
+- Render
+- Cloudinary
+- VS Code
 
 ---
 
-# 📂 Featured Projects
+# 🚀 Featured Projects
 
 ## 🍔 Feasto
-A production-ready MERN stack food delivery application with secure authentication, Razorpay payment integration, Cloudinary image uploads, order lifecycle management, full admin operations dashboard, and context-driven fluid UI. 
 
-* **Live App:** [feasto-admin-567d.onrender.com](https://feasto-admin-567d.onrender.com)
-* **Source:** [github.com/AyushKumar-12345/Feasto](https://github.com/AyushKumar-12345/Feasto)
+A full-stack food delivery application with secure authentication, Razorpay payment integration, Cloudinary image uploads, admin dashboard, and order management.
+
+**Live Demo:** https://feasto-admin-567d.onrender.com
+
+**Repository:** https://github.com/AyushKumar-12345/Feasto
 
 ---
 
 ## 🏡 StayNest
-A full-stack accommodation reservation platform inspired by Airbnb architectures. Engineered with secure session tracking, dynamic listing CRUD pipelines, structured user reviews, interactive geospatial features, and optimized view caching using Node.js, Express, MongoDB, and Bootstrap layouts.
 
-* **Live App:** [staynest-dnrm.onrender.com](https://staynest-dnrm.onrender.com)
-* **Source:** [github.com/AyushKumar-12345/StayNest](https://github.com/AyushKumar-12345/StayNest)
+A MERN Stack accommodation booking platform featuring authentication, property listings, booking management, reviews, and responsive design.
+
+**Live Demo:** https://staynest-dnrm.onrender.com
+
+**Repository:** https://github.com/AyushKumar-12345/StayNest
 
 ---
 
 ## 🏠 Smart House Price Predictor
-An end-to-end Machine Learning web service predicting real estate variations using trained data matrices. Features continuous regression matching, real-time feature parsing via a fast Flask middleware layer, and modular design.
 
-* **Live App:** [smarthousepricepredictor.onrender.com](https://smarthousepricepredictor.onrender.com)
-* **Source:** [github.com/AyushKumar-12345/SmartHousePricePredictor](https://github.com/AyushKumar-12345/SmartHousePricePredictor)
+A Machine Learning web application that predicts house prices using Linear Regression with Flask backend.
+
+**Live Demo:** https://smarthousepricepredictor.onrender.com
+
+**Repository:** https://github.com/AyushKumar-12345/SmartHousePricePredictor
 
 ---
 
-# 📈 Coding Profiles
+# 💻 Coding Profiles
 
 ### LeetCode
-* **Profile:** [leetcode.com/u/ayushkumardandapat/](https://leetcode.com/u/ayushkumardandapat/)
-* *Metrics:* 160+ Algorithmic Challenges Solved (Core Focus: Data Structures & Algorithms in Java)
+
+https://leetcode.com/u/ayushkumardandapat/
+
+**160+ Problems Solved**
+
+---
 
 ### GeeksforGeeks
-* **Profile:** [geeksforgeeks.org/user/ayushkumar123/](https://www.geeksforgeeks.org/)
-* *Metrics:* 50+ Specialized Core Concepts Solved
+
+https://www.geeksforgeeks.org/profile/ayushkumardcypg
+
+**50+ Problems Solved**
 
 ---
 
 # 📬 Contact
 
-* **Developer:** Ayush Kumar
-* **Email:** [ayushkumardandapat200@gmail.com](mailto:ayushkumardandapat200@gmail.com)
-* **Phone:** +91 6371104472
-* **LinkedIn:** [linkedin.com/in/ayush-kumar-97326636a/](https://www.linkedin.com/in/ayush-kumar-97326636a/)
-* **GitHub:** [github.com/AyushKumar-12345](https://github.com/AyushKumar-12345)
+**Ayush Kumar**
+
+📧 ayushkumardandapat200@gmail.com
+
+📱 +91 6371104472
+
+💼 LinkedIn
+
+https://www.linkedin.com/in/ayush-kumar-97326636a/
+
+💻 GitHub
+
+https://github.com/AyushKumar-12345
 
 ---
 
-# 🚀 Getting Started
+# ⚙️ Installation
 
-Clone the repository:
+Clone the repository
+
 ```bash
-git clone [https://github.com/AyushKumar-12345/ayush-portfolio.git](https://github.com/AyushKumar-12345/ayush-portfolio.git)
+git clone https://github.com/AyushKumar-12345/ayush-portfolio.git
+```
+
+Go to the project directory
+
+```bash
 cd ayush-portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+⭐ If you like this project, consider giving it a star.
