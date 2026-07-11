@@ -170,7 +170,19 @@ portfolio/
 
 ---
 
-## 💻 Skills
+## 👨‍💻 About Me
+
+![About](assets/screenshots/about.png)
+
+---
+
+## 🎓 Education
+
+![Education](assets/screenshots/education.png)
+
+---
+
+## 🛠️ Technical Skills
 
 ![Skills](assets/screenshots/skills.png)
 
@@ -178,63 +190,43 @@ portfolio/
 
 ## 🚀 Featured Projects
 
-![Projects](assets/screenshots/projects-1.png)
+![Projects Part 1](assets/screenshots/projects-1.png)
+
+---
+
+## 🚀 More Projects
+
+![Projects Part 2](assets/screenshots/projects-2.png)
+
+---
+
+## 🏆 Achievements
+
+![Achievements](assets/screenshots/achievements.png)
+
+---
+
+## 💻 Coding Profiles
+
+![Coding Profiles](assets/screenshots/coding.png)
+
+---
+
+## 💼 Services
+
+![Services Part 1](assets/screenshots/services-1.png)
+
+---
+
+## 💼 More Services
+
+![Services Part 2](assets/screenshots/services-2.png)
 
 ---
 
 ## 📬 Contact
 
 ![Contact](assets/screenshots/contact.png)
-
----
-
-<details>
-
-<summary>📷 View More Screenshots</summary>
-
-<br>
-
-### About
-
-![About](assets/screenshots/about.png)
-
----
-
-### Education
-
-![Education](assets/screenshots/education.png)
-
----
-
-### Projects (More)
-
-![Projects](assets/screenshots/projects-2.png)
-
----
-
-### Achievements
-
-![Achievements](assets/screenshots/achievements.png)
-
----
-
-### Coding Profiles
-
-![Coding](assets/screenshots/coding.png)
-
----
-
-### Services
-
-![Services](assets/screenshots/services-1.png)
-
----
-
-### More Services
-
-![Services](assets/screenshots/services-2.png)
-
-</details>
 
 ---
 # ⚙️ Installation
