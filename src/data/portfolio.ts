@@ -9,7 +9,7 @@ export const personalData = {
   email: "ayushkumardandapat200@gmail.com",
   phone: "+91 6371104472",
   resumeUrl: "#",
-  avatar: "/mygallary.jpg",
+  avatar: `${import.meta.env.BASE_URL}mygallary.jpg`,
   social: {
     github: "https://github.com/AyushKumar-12345",
     linkedin: "https://www.linkedin.com/in/ayush-kumar-97326636a/",
