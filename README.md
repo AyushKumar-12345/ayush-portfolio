@@ -1,36 +1,101 @@
-# 👋 Ayush Kumar | Developer Portfolio
+# 🌐 Ayush Portfolio
 
-A modern, responsive, and interactive personal portfolio built with **React, TypeScript, Vite, Tailwind CSS, and Framer Motion** to showcase my projects, technical skills, education, and achievements.
+<p align="center">
+
+Modern Full Stack Developer Portfolio built using **React**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **Vite**.
+
+</p>
+
+<p align="center">
+
+<a href="https://ayush-portfolio-3yan.onrender.com">
+<img src="https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge">
+</a>
+
+<a href="https://github.com/AyushKumar-12345">
+<img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github">
+</a>
+
+<img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react">
+
+<img src="https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript">
+
+<img src="https://img.shields.io/badge/TailwindCSS-4-38BDF8?style=for-the-badge&logo=tailwindcss">
+
+</p>
 
 ---
 
-## 🌐 Live Demo
+# 🌐 Live Demo
 
-🔗 **Portfolio:** https://ayush-portfolio-3yan.onrender.com
+### Portfolio Website
 
----
-
-## 👨‍💻 About
-
-Hi, I'm **Ayush Kumar**, a Fourth Year **B.Tech Information Technology** student at **IIIT Bhubaneswar**.
-
-I am passionate about building scalable full-stack web applications using the **MERN Stack**, solving **Data Structures & Algorithms** problems in Java, and exploring **Artificial Intelligence & Machine Learning**.
-
-Currently looking for **Software Development Engineer (SDE)** Internship and Full-Time opportunities.
+https://ayush-portfolio-3yan.onrender.com
 
 ---
 
+# 📖 Project Overview
+
+This repository contains my personal developer portfolio showcasing my journey as a **Full Stack MERN Developer**, **Java DSA enthusiast**, and **Machine Learning learner**.
+
+The portfolio highlights my projects, technical skills, education, achievements, coding profiles, and contact information through a modern, responsive, and interactive interface.
+
+Built using **React**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**, the application focuses on performance, accessibility, clean UI/UX, and recruiter-friendly presentation.
+
+---
+
+# ✨ Key Highlights
+
+- Modern responsive interface
+- Smooth Framer Motion animations
+- Light & Dark theme
+- Interactive project showcase
+- Skills visualization
+- Education timeline
+- Achievements section
+- Coding profiles
+- Contact section
+- Resume integration
+- SEO optimized
+
+---
 # ✨ Features
 
-- Modern and responsive UI
-- Light & Dark theme
-- Smooth animations using Framer Motion
-- Mobile-first responsive design
-- Project showcase with live demos
-- Skills, education and achievements section
-- Resume download
-- Contact section
-- Optimized performance with Vite
+## 🎨 User Experience
+
+- Modern developer portfolio
+- Fully responsive design
+- Smooth scrolling navigation
+- Beautiful page animations
+- Light & Dark mode
+- Professional UI/UX
+- Fast loading performance
+
+---
+
+## 📂 Portfolio Sections
+
+- Hero Section
+- About Me
+- Education
+- Technical Skills
+- Featured Projects
+- Achievements
+- Coding Profiles
+- Services
+- Contact
+
+---
+
+## ⚙️ Developer Features
+
+- Resume Download
+- Live Project Links
+- GitHub Repository Links
+- SEO Friendly
+- Reusable Components
+- Clean Folder Structure
+- Type-safe Development
 
 ---
 
@@ -38,131 +103,173 @@ Currently looking for **Software Development Engineer (SDE)** Internship and Ful
 
 ## Frontend
 
-- React
+- React 19
 - TypeScript
 - Vite
 - Tailwind CSS
 - Framer Motion
 
-## Backend
+---
 
-- Node.js
-- Express.js
-- MongoDB
-- REST APIs
+## UI Libraries
 
-## Programming Languages
+- Lucide React
+- React Helmet Async
 
-- Java
-- JavaScript
-- TypeScript
-- Python
+---
 
-## Tools
+## Development Tools
 
 - Git
 - GitHub
-- Render
-- Cloudinary
+- npm
+- ESLint
+- PostCSS
 - VS Code
 
 ---
 
-# 🚀 Featured Projects
+# 📁 Project Structure
 
-## 🍔 Feasto
-
-A full-stack food delivery application with secure authentication, Razorpay payment integration, Cloudinary image uploads, admin dashboard, and order management.
-
-**Live Demo:** https://feasto-admin-567d.onrender.com
-
-**Repository:** https://github.com/AyushKumar-12345/Feasto
-
----
-
-## 🏡 StayNest
-
-A MERN Stack accommodation booking platform featuring authentication, property listings, booking management, reviews, and responsive design.
-
-**Live Demo:** https://staynest-dnrm.onrender.com
-
-**Repository:** https://github.com/AyushKumar-12345/StayNest
-
----
-
-## 🏠 Smart House Price Predictor
-
-A Machine Learning web application that predicts house prices using Linear Regression with Flask backend.
-
-**Live Demo:** https://smarthousepricepredictor.onrender.com
-
-**Repository:** https://github.com/AyushKumar-12345/SmartHousePricePredictor
+```text
+portfolio/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── hooks/
+│   ├── sections/
+│   ├── utils/
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── package.json
+├── vite.config.ts
+└── README.md
+```
 
 ---
 
-# 💻 Coding Profiles
+# 🎯 Design Goals
 
-### LeetCode
+- Professional recruiter-friendly interface
+- Smooth user interactions
+- Clean component architecture
+- Modern UI design
+- Accessibility focused
+- Optimized performance
+- Fully responsive across devices
 
-https://leetcode.com/u/ayushkumardandapat/
+---
+# 📸 Application Preview
 
-**160+ Problems Solved**
+## 🏠 Home
+
+![Home](assets/screenshots/hero.png)
 
 ---
 
-### GeeksforGeeks
+## 💻 Skills
 
-https://www.geeksforgeeks.org/profile/ayushkumardcypg
-
-**50+ Problems Solved**
+![Skills](assets/screenshots/skills.png)
 
 ---
 
-# 📬 Contact
+## 🚀 Featured Projects
 
-**Ayush Kumar**
-
-📧 ayushkumardandapat200@gmail.com
-
-📱 +91 6371104472
-
-💼 LinkedIn
-
-https://www.linkedin.com/in/ayush-kumar-97326636a/
-
-💻 GitHub
-
-https://github.com/AyushKumar-12345
+![Projects](assets/screenshots/projects-1.png)
 
 ---
 
+## 📬 Contact
+
+![Contact](assets/screenshots/contact.png)
+
+---
+
+<details>
+
+<summary>📷 View More Screenshots</summary>
+
+<br>
+
+### About
+
+![About](assets/screenshots/about.png)
+
+---
+
+### Education
+
+![Education](assets/screenshots/education.png)
+
+---
+
+### Projects (More)
+
+![Projects](assets/screenshots/projects-2.png)
+
+---
+
+### Achievements
+
+![Achievements](assets/screenshots/achievements.png)
+
+---
+
+### Coding Profiles
+
+![Coding](assets/screenshots/coding.png)
+
+---
+
+### Services
+
+![Services](assets/screenshots/services-1.png)
+
+---
+
+### More Services
+
+![Services](assets/screenshots/services-2.png)
+
+</details>
+
+---
 # ⚙️ Installation
 
-Clone the repository
+## 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/AyushKumar-12345/ayush-portfolio.git
 ```
 
-Go to the project directory
+Move into the project folder.
 
 ```bash
 cd ayush-portfolio
 ```
 
-Install dependencies
+---
+
+## 2️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-Run the development server
+---
+
+## 3️⃣ Run the Development Server
 
 ```bash
 npm run dev
 ```
 
-Build for production
+---
+
+## 4️⃣ Build for Production
 
 ```bash
 npm run build
@@ -170,10 +277,88 @@ npm run build
 
 ---
 
-# 📄 License
+## 5️⃣ Preview Production Build
 
-This project is licensed under the MIT License.
+```bash
+npm run preview
+```
 
 ---
 
-⭐ If you like this project, consider giving it a star.
+# 📁 Folder Structure
+
+```text
+portfolio/
+│
+├── public/
+├── assets/
+│   └── screenshots/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── hooks/
+│   ├── sections/
+│   ├── utils/
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── package.json
+├── vite.config.ts
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+# 🚀 Performance
+
+- ⚡ Optimized with Vite
+- 🎨 Utility-first styling with Tailwind CSS
+- 📱 Fully responsive across devices
+- ♿ Accessibility-focused design
+- ✨ Smooth animations powered by Framer Motion
+- 🚀 Optimized production build
+
+---
+
+# 👨‍💻 About the Developer
+
+## Ayush Kumar
+
+**B.Tech Information Technology**  
+**IIIT Bhubaneswar**
+
+I enjoy building modern full-stack web applications, solving Data Structures & Algorithms in Java, and exploring Machine Learning through practical projects.
+
+---
+
+# 📫 Connect With Me
+
+- **Email:** ayushkumardandapat200@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/ayush-kumar-97326636a/
+- **GitHub:** https://github.com/AyushKumar-12345
+- **Portfolio:** https://ayush-portfolio-3yan.onrender.com
+
+---
+
+# 📄 License
+
+This project is developed for **educational and portfolio purposes**.
+
+---
+
+# ⭐ Support
+
+If you found this project helpful, consider giving it a **⭐ Star** on GitHub.
+
+Your support is appreciated.
+
+---
+
+<div align="center">
+
+## 🚀 Built with React, TypeScript, Tailwind CSS & Framer Motion
+
+Thank you for visiting this repository!
+
+</div>
