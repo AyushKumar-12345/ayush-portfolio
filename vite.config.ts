@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   plugins: [react()],
-  base: '/ayush-portfolio/',
+  base: '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -23,7 +23,11 @@ export default defineConfig({
             if (id.includes('framer-motion')) {
               return 'animations'
             }
-            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) {
+            if (
+              id.includes('react') ||
+              id.includes('react-dom') ||
+              id.includes('react-router-dom')
+            ) {
               return 'vendor'
             }
             return 'dependencies'
