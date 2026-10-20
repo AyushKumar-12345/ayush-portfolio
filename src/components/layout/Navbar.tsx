@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Sun, Moon, Menu, X } from 'lucide-react'
+import { Sun, Moon, Menu, X, FileText } from 'lucide-react'
 import { useTheme, useScrollPosition, useActiveSection } from '@/hooks'
 import { personalData } from '@/data/portfolio'
 
@@ -83,7 +83,7 @@ export function Navbar() {
             })}
           </ul>
 
-          <div className="flex items-center gap-3 sm:gap-4">
+          <div className="flex items-center gap-2.5 sm:gap-3.5">
             <button
               onClick={toggleTheme}
               className="p-2.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm cursor-pointer"
@@ -101,6 +101,16 @@ export function Navbar() {
                 </motion.div>
               </AnimatePresence>
             </button>
+
+            <a
+              href={personalData.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900 text-xs sm:text-sm font-semibold tracking-wide transition-all active:scale-95 cursor-pointer shadow-sm"
+            >
+              <FileText size={14} className="opacity-70" />
+              Resume
+            </a>
 
             <button
               onClick={() => scrollTo('contact')}
@@ -158,8 +168,9 @@ export function Navbar() {
                   href={personalData.resumeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full text-center block bg-zinc-900 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-100 text-white dark:text-zinc-900 font-semibold py-3.5 rounded-full shadow-md transition-transform active:scale-95"
+                  className="w-full text-center flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-100 text-white dark:text-zinc-900 font-semibold py-3.5 rounded-full shadow-md transition-transform active:scale-95"
                 >
+                  <FileText size={16} />
                   Download Resume
                 </a>
               </div>
