@@ -5,7 +5,7 @@ import {
   Linkedin,
   FileText,
 } from 'lucide-react'
-import { personalData } from '@/data/portfolio'
+import { personalData, projectsData } from '@/data/portfolio'
 
 const floatingShapes = [
   {
@@ -127,13 +127,15 @@ export function Hero() {
                   sequence={[
                     'Full Stack Web Applications',
                     2200,
-                    'MERN Stack Solutions',
+                    'Agentic AI & LangGraph Workflows',
                     2200,
-                    'Java DSA Solutions',
+                    'Production MERN Platforms',
                     2200,
-                    'AI & ML Projects',
+                    'Java DSA Algorithms',
                     2200,
-                    'Responsive User Interfaces',
+                    'Machine Learning Inference Engines',
+                    2200,
+                    'Scalable RESTful Microservices',
                     2200,
                   ]}
                   repeat={Infinity}
@@ -150,9 +152,9 @@ export function Hero() {
                 duration: 0.6,
                 delay: 0.4,
               }}
-              className="text-base md:text-lg font-medium max-w-2xl mb-12 leading-relaxed text-zinc-500 dark:text-zinc-400"
+              className="text-base md:text-lg font-medium max-w-2xl mb-12 leading-relaxed text-zinc-600 dark:text-zinc-400"
             >
-              {personalData.bio.slice(0, 170).trim()}...
+              B.Tech IT student at IIIT Bhubaneswar specializing in scalable full-stack web engineering, agentic AI systems, and algorithmic problem-solving. Architect of {projectsData.length} production systems with 200+ DSA problems solved.
             </motion.p>
 
             <motion.div
@@ -178,10 +180,10 @@ export function Hero() {
               </button>
 
               <a
-                href="./Ayush_Kumar_Resume.pdf"
+                href={personalData.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-semibold tracking-wide px-8 py-4 rounded-full flex items-center gap-2 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all active:scale-95"
+                className="text-sm font-semibold tracking-wide px-8 py-4 rounded-full flex items-center gap-2 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all active:scale-95 cursor-pointer"
               >
                 <FileText size={15} className="opacity-70" />
                 View Resume
@@ -223,7 +225,7 @@ export function Hero() {
             >
               {[
                 { value: '7.48', label: 'CGPA' },
-                { value: '3', label: 'Major Projects' },
+                { value: `${projectsData.length}`, label: 'Production Systems' },
                 { value: '200+', label: 'DSA Problems' },
               ].map((stat, i) => (
                 <div key={i} className="flex flex-col min-w-[120px]">

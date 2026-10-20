@@ -2,9 +2,27 @@ import { personalData } from '@/data/portfolio'
 import { Github, Linkedin, Mail } from 'lucide-react'
 
 const socialIcons = [
-  { key: 'github', icon: Github, label: 'GitHub' },
-  { key: 'linkedin', icon: Linkedin, label: 'LinkedIn' },
-  { key: 'email', icon: Mail, label: 'Email' },
+  {
+    key: 'github',
+    icon: Github,
+    label: 'GitHub',
+    getHref: () => personalData.social.github,
+    isMail: false,
+  },
+  {
+    key: 'linkedin',
+    icon: Linkedin,
+    label: 'LinkedIn',
+    getHref: () => personalData.social.linkedin,
+    isMail: false,
+  },
+  {
+    key: 'email',
+    icon: Mail,
+    label: 'Email',
+    getHref: () => `https://mail.google.com/mail/?view=cm&fs=1&to=${personalData.email}`,
+    isMail: false,
+  },
 ]
 
 export function Footer() {
@@ -24,17 +42,17 @@ export function Footer() {
         </div>
 
         <div className="flex items-center gap-1 bg-zinc-100/80 dark:bg-zinc-900/80 border border-zinc-200/50 dark:border-zinc-800/50 p-1 rounded-full">
-          {socialIcons.map(({ key, icon: Icon, label }) => {
-            const href = personalData.social?.[key as keyof typeof personalData.social]
+          {socialIcons.map(({ key, icon: Icon, label, getHref, isMail }) => {
+            const href = getHref()
 
             if (!href) return null
 
             return (
               <a
                 key={key}
-                href={key === 'email' ? `mailto:${href}` : href}
-                target={key === 'email' ? undefined : '_blank'}
-                rel={key === 'email' ? undefined : 'noopener noreferrer'}
+                href={href}
+                target={isMail ? undefined : '_blank'}
+                rel={isMail ? undefined : 'noopener noreferrer'}
                 aria-label={label}
                 className="p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 hover:bg-white dark:hover:bg-zinc-800 border border-transparent hover:border-zinc-200 dark:hover:border-zinc-700 transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm hover:shadow"
               >
@@ -49,7 +67,7 @@ export function Footer() {
             © {year} {personalData.name}
           </p>
           <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-1">
-            Designed & Developed by {personalData.name}
+            Built with React, TypeScript & Tailwind CSS
           </p>
         </div>
       </div>

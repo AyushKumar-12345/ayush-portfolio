@@ -98,6 +98,7 @@ export function StaggerContainer({
   )
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const fadeUpItem: Variants = {
   hidden: {
     opacity: 0,

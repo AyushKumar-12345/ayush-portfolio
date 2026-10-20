@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   ExternalLink,
@@ -10,17 +10,22 @@ import {
 import { projectsData } from '@/data/portfolio'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 
-type Project = typeof projectsData[0]
+type Project = (typeof projectsData)[0]
 
 interface ProjectModalProps {
   project: Project
   onClose: () => void
 }
 
-function ProjectModal({
-  project,
-  onClose,
-}: ProjectModalProps) {
+function ProjectModal({ project, onClose }: ProjectModalProps) {
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [onClose])
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -28,6 +33,8 @@ function ProjectModal({
       exit={{ opacity: 0 }}
       onClick={onClose}
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md"
+      role="dialog"
+      aria-modal="true"
     >
       <motion.div
         initial={{
@@ -62,7 +69,8 @@ function ProjectModal({
           <div className="absolute inset-0 bg-gradient-to-t from-white dark:from-zinc-950 via-transparent to-transparent" />
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 p-2.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 text-zinc-800 dark:text-zinc-200 backdrop-blur-md transition-all duration-300 hover:scale-105 cursor-pointer"
+            aria-label="Close modal"
+            className="absolute top-4 right-4 p-2.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 text-zinc-800 dark:text-zinc-200 backdrop-blur-md transition-all duration-300 hover:scale-105 cursor-pointer shadow-md"
           >
             <X size={16} />
           </button>
@@ -99,7 +107,7 @@ function ProjectModal({
             </div>
           </div>
 
-          <p className="text-sm sm:text-base leading-relaxed font-medium text-zinc-500 dark:text-zinc-400 mb-8">
+          <p className="text-sm sm:text-base leading-relaxed font-medium text-zinc-600 dark:text-zinc-400 mb-8">
             {project.description}
           </p>
 
@@ -119,7 +127,7 @@ function ProjectModal({
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-zinc-900 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-100 text-white dark:text-zinc-900 justify-center py-3.5 rounded-xl text-sm font-semibold flex items-center gap-2 shadow-md transition-all cursor-pointer"
+              className="flex-1 bg-zinc-900 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-100 text-white dark:text-zinc-900 justify-center py-3.5 rounded-xl text-sm font-semibold flex items-center gap-2 shadow-md transition-all cursor-pointer active:scale-95"
             >
               <ExternalLink size={15} />
               Live Preview
@@ -129,7 +137,7 @@ function ProjectModal({
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 justify-center py-3.5 rounded-xl text-sm font-semibold border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900 flex items-center gap-2 transition-all cursor-pointer"
+              className="flex-1 justify-center py-3.5 rounded-xl text-sm font-semibold border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900 flex items-center gap-2 transition-all cursor-pointer active:scale-95"
             >
               <Github size={15} />
               View Source
@@ -144,31 +152,21 @@ function ProjectModal({
 export function Projects() {
   const [selected, setSelected] = useState<Project | null>(null)
 
-  const filteredProjects = projectsData.filter((project) => {
-    const isPortfolio = 
-      project.title.toLowerCase().includes('portfolio') ||
-      project.tagline.toLowerCase().includes('portfolio') ||
-      project.description.toLowerCase().includes('portfolio')
-    return !isPortfolio
-  })
-
   return (
     <div id="projects" className="scroll-mt-24">
-      <section
-        className="py-32 px-6 md:px-12 bg-zinc-50 dark:bg-zinc-900 overflow-hidden"
-      >
+      <section className="py-32 px-6 md:px-12 bg-zinc-50 dark:bg-zinc-900 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection>
             <p className="text-xs uppercase tracking-widest font-semibold mb-3 text-blue-500 dark:text-blue-400">
-              Featured Projects
+              Featured Systems
             </p>
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-20 text-zinc-900 dark:text-zinc-50">
-              Projects & Case Studies
+              Projects & Production Systems
             </h2>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {filteredProjects.map((project, i) => (
+            {projectsData.map((project, i) => (
               <motion.div
                 key={project.id}
                 initial={{ opacity: 0, y: 40 }}
@@ -223,7 +221,7 @@ export function Projects() {
                           onClick={(e) => e.stopPropagation()}
                           target="_blank"
                           rel="noopener noreferrer"
-                          aria-label="GitHub"
+                          aria-label={`View ${project.title} on GitHub`}
                           className="p-1.5 rounded-full text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 hover:bg-white dark:hover:bg-zinc-800 transition-colors cursor-pointer"
                         >
                           <Github size={15} />
@@ -234,7 +232,7 @@ export function Projects() {
                           onClick={(e) => e.stopPropagation()}
                           target="_blank"
                           rel="noopener noreferrer"
-                          aria-label="Live Demo"
+                          aria-label={`Visit ${project.title} Live`}
                           className="p-1.5 rounded-full text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 hover:bg-white dark:hover:bg-zinc-800 transition-colors cursor-pointer"
                         >
                           <ExternalLink size={15} />

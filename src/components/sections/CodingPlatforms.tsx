@@ -29,15 +29,7 @@ function StatCard({
   color: string
   inView: boolean
 }) {
-  const parsedValue =
-    typeof stat.value === 'string'
-      ? parseFloat(stat.value)
-      : stat.value
-
-  const isNumber =
-    !isNaN(parsedValue as number) &&
-    isFinite(parsedValue as number)
-
+  const isNumber = typeof stat.value === 'number'
   const suffix = stat.suffix || ''
 
   return (
@@ -48,7 +40,7 @@ function StatCard({
       >
         {isNumber && inView ? (
           <CountUp
-            end={parsedValue as number}
+            end={stat.value as number}
             duration={2}
             suffix={suffix}
             separator=","
@@ -70,30 +62,6 @@ export function CodingPlatforms() {
     threshold: 0.15,
   })
 
-  const filteredPlatforms = (codingPlatformsData as Platform[])
-    .filter((platform) => {
-      const name = platform.platform.toLowerCase()
-      return name.includes('leetcode') || name.includes('gfg') || name.includes('geeksforgeeks')
-    })
-    .map((platform) => ({
-      ...platform,
-      stats: platform.stats
-        .filter((stat) => {
-          const labelLower = stat.label.toLowerCase()
-          return labelLower === 'solved' || labelLower === 'language'
-        })
-        .map((stat) => {
-          const labelLower = stat.label.toLowerCase()
-          if (labelLower === 'solved') {
-            return { ...stat, value: '100+', suffix: undefined }
-          }
-          if (labelLower === 'language') {
-            return { ...stat, value: 'Java', suffix: undefined }
-          }
-          return stat
-        }),
-    }))
-
   return (
     <div id="coding" className="scroll-mt-24">
       <section
@@ -110,7 +78,7 @@ export function CodingPlatforms() {
           </AnimatedSection>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {filteredPlatforms.map((platform, i) => (
+            {(codingPlatformsData as Platform[]).map((platform, i) => (
               <motion.a
                 key={i}
                 href={platform.url}
@@ -185,7 +153,7 @@ export function CodingPlatforms() {
                       }}
                     />
 
-                    <div className="grid grid-cols-2 gap-3 border border-zinc-100 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 p-4 rounded-xl shadow-inner">
+                    <div className="grid grid-cols-3 gap-3 border border-zinc-100 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 p-4 rounded-xl shadow-inner">
                       {platform.stats.map((stat, si) => (
                         <StatCard
                           key={si}

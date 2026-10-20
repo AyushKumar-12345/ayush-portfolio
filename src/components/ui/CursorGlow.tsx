@@ -5,7 +5,7 @@ export function CursorGlow() {
 
   return (
     <div
-      className="pointer-events-none fixed inset-0 z-30 hidden sm:block transition-opacity duration-500"
+      className="pointer-events-none fixed top-0 left-0 z-30 hidden sm:block transition-opacity duration-500"
       style={{
         transform: `translate3d(${x - 240}px, ${y - 240}px, 0)`,
         width: '480px',
