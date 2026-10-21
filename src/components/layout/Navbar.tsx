@@ -56,14 +56,14 @@ export function Navbar() {
             <span className="text-blue-500 dark:text-blue-400">.</span>
           </button>
 
-          <ul className="hidden xl:flex items-center gap-1 bg-zinc-100/80 dark:bg-zinc-800/80 border border-zinc-200/50 dark:border-zinc-700/50 p-1 rounded-full relative">
+          <ul className="hidden xl:flex items-center gap-0.5 2xl:gap-1 bg-zinc-100/80 dark:bg-zinc-800/80 border border-zinc-200/50 dark:border-zinc-700/50 p-1 rounded-full relative">
             {navItems.map((item) => {
               const isActive = activeSection === item.id
               return (
                 <li key={item.id} className="relative">
                   <button
                     onClick={() => scrollTo(item.id)}
-                    className={`px-3 py-1.5 lg:px-3.5 lg:py-2 rounded-full text-xs lg:text-sm font-medium tracking-wide transition-colors relative z-10 cursor-pointer ${
+                    className={`px-2.5 py-1.5 2xl:px-3.5 2xl:py-2 rounded-full text-xs 2xl:text-sm font-medium tracking-wide transition-colors relative z-10 cursor-pointer whitespace-nowrap ${
                       isActive
                         ? 'text-white dark:text-zinc-950'
                         : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50'
@@ -83,10 +83,10 @@ export function Navbar() {
             })}
           </ul>
 
-          <div className="flex items-center gap-2.5 sm:gap-3.5">
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             <button
               onClick={toggleTheme}
-              className="p-2.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm cursor-pointer"
+              className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm cursor-pointer shrink-0"
               aria-label="Toggle theme"
             >
               <AnimatePresence mode="wait" initial={false}>
@@ -106,7 +106,7 @@ export function Navbar() {
               href={personalData.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900 text-xs sm:text-sm font-semibold tracking-wide transition-all active:scale-95 cursor-pointer shadow-sm"
+              className="hidden md:inline-flex items-center justify-center gap-1.5 h-9 sm:h-10 px-3.5 sm:px-4 rounded-full border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900 text-xs sm:text-sm font-semibold tracking-wide whitespace-nowrap shrink-0 transition-all active:scale-95 cursor-pointer shadow-sm"
             >
               <FileText size={14} className="opacity-70" />
               Resume
@@ -114,14 +114,14 @@ export function Navbar() {
 
             <button
               onClick={() => scrollTo('contact')}
-              className="hidden sm:flex bg-zinc-900 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-100 text-white dark:text-zinc-900 text-xs sm:text-sm font-semibold tracking-wide px-5 sm:px-6 py-2.5 rounded-full transition-transform active:scale-95 shadow-md cursor-pointer"
+              className="hidden sm:inline-flex items-center justify-center whitespace-nowrap shrink-0 h-9 sm:h-10 px-4 sm:px-5 bg-zinc-900 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-100 text-white dark:text-zinc-900 text-xs sm:text-sm font-semibold tracking-wide rounded-full transition-transform active:scale-95 shadow-md cursor-pointer"
             >
               Let's Connect
             </button>
 
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="xl:hidden relative z-50 p-2.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 transition-transform active:scale-95 cursor-pointer"
+              className="xl:hidden relative z-50 w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 flex items-center justify-center transition-transform active:scale-95 cursor-pointer shrink-0"
               aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             >
               {menuOpen ? <X size={20} /> : <Menu size={20} />}
