@@ -33,15 +33,40 @@
 
 ## 📌 Executive Overview
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                       ENGINEERING DASHBOARD                                            │
-├────────────────────────────┬────────────────────────────┬─────────────────────────┬────────────────────┤
-│     PRODUCTION SYSTEMS     │        JAVA DSA RIGOR      │     ACADEMIC RECORD     │  LIGHTHOUSE AUDIT  │
-│    4 Systems Deployed      │    200+ Problems Solved    │   IIIT-Bh (CGPA: 7.48)  │  100 / 100 / 100   │
-│  (Docker • Render • CI/CD) │   (LeetCode & GFG In Java) │  Class X: 98.2% | XII: 88.6%│  Zero-Warning Build│
-└────────────────────────────┴────────────────────────────┴─────────────────────────┴────────────────────┘
-```
+<div align="center">
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="center" width="25%">🚀 Production Systems</th>
+      <th align="center" width="25%">☕ Java DSA Rigor</th>
+      <th align="center" width="25%">🎓 Academic Record</th>
+      <th align="center" width="25%">⚡ Lighthouse Audit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">
+        <b>4 Systems Deployed</b><br/>
+        <sub>Docker • Render • CI/CD</sub>
+      </td>
+      <td align="center">
+        <b>200+ Solved in Java</b><br/>
+        <sub>LeetCode & GeeksforGeeks</sub>
+      </td>
+      <td align="center">
+        <b>IIIT-Bh (CGPA: 7.48)</b><br/>
+        <sub>Class X: 98.2% | XII: 88.6%</sub>
+      </td>
+      <td align="center">
+        <b>100 / 100 / 100</b><br/>
+        <sub>Zero-Warning Build</sub>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 I'm **Ayush Kumar**, a Final-Year Information Technology undergraduate at the **International Institute of Information Technology (IIIT), Bhubaneswar** (Expected May 2026). 
 
