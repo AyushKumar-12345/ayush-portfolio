@@ -1,10 +1,13 @@
 \documentclass[letterpaper,10pt]{article}
 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
@@ -13,19 +16,27 @@
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \usepackage{microtype}
-\usepackage{amsmath}
 
-% Ensure that generated PDF is machine readable / ATS parsable
+% ATS Machine Readability / Unicode text mapping
 \input{glyphtounicode}
 \pdfgentounicode=1
 
+% Deep Executive Color Palette
+\definecolor{primaryColor}{HTML}{0B132B}    % Deep Midnight Obsidian for candidate name
+\definecolor{accentColor}{HTML}{1E3A8A}     % Deep Oxford Navy for section titles & rules
+\definecolor{linkColor}{HTML}{1D4ED8}       % Deep Classic Blue for clickable hyperlinks
+\definecolor{iconColor}{HTML}{1E40AF}       % Deep Cobalt Navy for icons
+\definecolor{subtextColor}{HTML}{334155}    % Deep Slate for subheadings & metadata
+\definecolor{sepColor}{HTML}{64748B}        % Slate for pipe separators
+
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.5pt}
 
-% Adjust margins for standard ATS single-page format
+% Margins calibrated for strict 1-page layout
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.0in}
@@ -38,23 +49,23 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Section formatting with Deep Navy color & matching rule
 \titleformat{\section}{
-  \vspace{-7pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+  \vspace{-6pt}\raggedright\large\bfseries\color{accentColor}
+}{}{0em}{}[\color{accentColor}\titlerule \vspace{-3.5pt}]
 
-% Custom commands
+% Custom list & heading commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-1.8pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1.5pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{#2} \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{\color{primaryColor}#1} & \textbf{\color{primaryColor}#2} \\
+      \textit{\small\color{subtextColor}#3} & \textit{\small\color{subtextColor}#4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -70,7 +81,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\textbullet]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4.5pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -79,22 +90,30 @@
 
 %----------HEADING----------
 \begin{center}
-    {\Huge \textbf{Ayush Kumar}} \\ \vspace{4pt}
+    {\Huge \textbf{\color{primaryColor} Ayush Kumar}} \\ \vspace{4pt}
     \small
-    \href{tel:+916371104472}{\raisebox{-0.1\height}\faPhone\ +91-6371104472} ~|~
-    \href{mailto:ayushkumardandapat200@gmail.com}{\raisebox{-0.1\height}\faEnvelope\ ayushkumardandapat200@gmail.com} ~|~
-    \href{https://linkedin.com/in/ayush-kumar}{\raisebox{-0.1\height}\faLinkedin\ linkedin.com/in/ayush-kumar} ~|~
-    \href{https://github.com/AyushKumar-12345}{\raisebox{-0.1\height}\faGithub\ github.com/AyushKumar-12345} \\ \vspace{2pt}
-    \href{https://ayush-portfolio-3yan.onrender.com}{\raisebox{-0.1\height}\faGlobe\ Portfolio} ~|~
-    \href{https://leetcode.com/u/ayushkumardandapat/}{\raisebox{-0.1\height}\faCode\ LeetCode: 200+ Solved} ~|~
-    \href{https://www.geeksforgeeks.org/profile/ayushkumardcypg}{\raisebox{-0.1\height}\faLaptopCode\ GeeksforGeeks} ~|~
-    {\raisebox{-0.1\height}\faMapMarker*\ Bhubaneswar, Odisha, India}
+    \href{tel:+916371104472}{\color{iconColor}\faPhone*\thinspace\color{primaryColor}+91-6371104472}
+    \quad{\color{sepColor}$|$}\quad
+    \href{mailto:ayushkumardandapat200@gmail.com}{\color{iconColor}\faEnvelope\thinspace\color{linkColor}ayushkumardandapat200@gmail.com}
+    \quad{\color{sepColor}$|$}\quad
+    \href{https://ayush-portfolio-3yan.onrender.com}{\color{iconColor}\faGlobe\thinspace\color{linkColor}Portfolio}
+    \quad{\color{sepColor}$|$}\quad
+    {\color{iconColor}\faMapMarker*\thinspace\color{primaryColor}Bhubaneswar, Odisha, India}
+    \\[3pt]
+    \href{https://www.linkedin.com/in/ayush-kumar-97326636a/}{\color{iconColor}\faLinkedin\thinspace\color{linkColor}linkedin.com/in/ayush-kumar-97326636a}
+    \quad{\color{sepColor}$|$}\quad
+    \href{https://github.com/AyushKumar-12345}{\color{iconColor}\faGithub\thinspace\color{linkColor}github.com/AyushKumar-12345}
+    \quad{\color{sepColor}$|$}\quad
+    \href{https://leetcode.com/u/ayushkumardandapat/}{\color{iconColor}\faCode\thinspace\color{linkColor}LeetCode: 200+}
+    \quad{\color{sepColor}$|$}\quad
+    \href{https://www.geeksforgeeks.org/profile/ayushkumardcypg}{\color{iconColor}\faLaptopCode\thinspace\color{linkColor}GeeksforGeeks}
 \end{center}
+\vspace{-4pt}
 
 %-----------SUMMARY-----------
 \section{Summary}
 \small{
-Final-Year B.Tech Information Technology student at IIIT Bhubaneswar with strong foundations in Data Structures \& Algorithms, Full-Stack MERN Engineering, and Applied AI/ML. Experienced in architecting scalable RESTful APIs, autonomous agent workflows (LangGraph), vector search pipelines (pgvector), and containerized microservices (Docker). Actively seeking Software Development Engineer (SDE) Full-Time and New Grad roles.
+Software Development Engineer (SDE) candidate and Final-Year B.Tech IT student at IIIT Bhubaneswar (2023--2027). Skilled in Data Structures, Full-Stack MERN Development, and Agentic AI/ML. Experienced in architecting high-throughput REST APIs, LangGraph autonomous workflows, and containerized microservices.
 }
 
 %-----------EDUCATION-----------
@@ -112,49 +131,49 @@ Final-Year B.Tech Information Technology student at IIIT Bhubaneswar with strong
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, JavaScript (ES6+), Python, TypeScript, SQL, HTML5, CSS3} \\ \vspace{1.5pt}
-     \textbf{Web Technologies}{: React.js, Node.js, Express.js, FastAPI, Flask, Vite, Tailwind CSS, Bootstrap 5, EJS} \\ \vspace{1.5pt}
-     \textbf{AI \& Machine Learning}{: LangGraph, RAG Pipelines, pgvector, Scikit-learn, XGBoost, Pandas, NumPy, Google Gemini API} \\ \vspace{1.5pt}
-     \textbf{Databases \& DevOps}{: PostgreSQL, MongoDB Atlas, Docker, Docker Compose, Git, GitHub Actions (CI/CD), Render, Cloudinary} \\ \vspace{1.5pt}
-     \textbf{Core CS Fundamentals}{: Data Structures \& Algorithms, Object-Oriented Programming (OOP), DBMS, Operating Systems, RESTful APIs}
+     \textbf{\color{primaryColor}Languages}{: Java, JavaScript (ES6+), Python, TypeScript, SQL, HTML5, CSS3} \\ \vspace{1.5pt}
+     \textbf{\color{primaryColor}Web Technologies}{: React.js, Node.js, Express.js, FastAPI, Flask, Vite, Tailwind CSS, Bootstrap 5, EJS} \\ \vspace{1.5pt}
+     \textbf{\color{primaryColor}AI \& Machine Learning}{: LangGraph, RAG Pipelines, pgvector, Scikit-learn, XGBoost, Pandas, NumPy, Google Gemini API} \\ \vspace{1.5pt}
+     \textbf{\color{primaryColor}Databases \& DevOps}{: PostgreSQL, MongoDB Atlas, Docker, Docker Compose, Git, GitHub Actions (CI/CD), Render, Cloudinary} \\ \vspace{1.5pt}
+     \textbf{\color{primaryColor}Core CS Fundamentals}{: Data Structures \& Algorithms, Object-Oriented Programming (OOP), DBMS, Operating Systems, RESTful APIs}
     }}
  \end{itemize}
- \vspace{-14pt}
+ \vspace{-13pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{Feasto} $|$ \emph{React.js, Node.js, Express.js, MongoDB Atlas, Razorpay, Google Gemini API, Docker}}{\href{https://github.com/AyushKumar-12345/Feasto}{\faGithub\ GitHub} $|$ \href{https://feasto-frontend-qt0n.onrender.com}{\faExternalLink*\ Live Demo}}
+          {\textbf{\color{primaryColor}Feasto} $|$ \emph{\color{subtextColor}React.js, Node.js, Express.js, MongoDB Atlas, Razorpay, Google Gemini API, Docker}}{\href{https://github.com/AyushKumar-12345/Feasto}{\color{iconColor}\faGithub\ \color{linkColor}GitHub} \ \color{sepColor}$|$\ \href{https://feasto-frontend-qt0n.onrender.com}{\color{iconColor}\faExternalLink*\ \color{linkColor}Live Demo}}
           \resumeItemListStart
-            \resumeItem{Engineered a production-grade food delivery ecosystem following \textbf{MERN architecture} with decoupled customer and admin management portals, featuring real-time driver delivery tracking with \textbf{Leaflet GPS} and persistent cart state.}
-            \resumeItem{Integrated \textbf{Razorpay Payment Gateway} with cryptographic \textbf{HMAC-SHA256} webhook signature verification, ensuring zero transaction discrepancies across shopping carts, order lifecycles, and database states.}
-            \resumeItem{Embedded an AI food concierge using \textbf{Google Gemini API} for personalized dish recommendations; implemented \textbf{JWT role-based access control (RBAC)}, Cloudinary CDN image pipelines, and multi-container \textbf{Docker} deployment.}
+            \resumeItem{Architected a scalable MERN food delivery platform with decoupled admin and client portals, integrating Leaflet GPS for real-time driver tracking.}
+            \resumeItem{Integrated Razorpay Payment Gateway with cryptographic HMAC-SHA256 webhook signatures, eliminating transaction discrepancies across 100\% of checkout orders.}
+            \resumeItem{Spearheaded an AI food concierge using Google Gemini API, enforcing JWT role-based access control and containerized multi-service Docker deployments.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{StayNest} $|$ \emph{Node.js, Express.js, MongoDB Atlas, EJS, Bootstrap 5, Cloudinary, Razorpay, PDFKit}}{\href{https://github.com/AyushKumar-12345/StayNest}{\faGithub\ GitHub} $|$ \href{https://staynest-dnrm.onrender.com}{\faExternalLink*\ Live Demo}}
+          {\textbf{\color{primaryColor}StayNest} $|$ \emph{\color{subtextColor}Node.js, Express.js, MongoDB Atlas, EJS, Bootstrap 5, Cloudinary, Razorpay, PDFKit}}{\href{https://github.com/AyushKumar-12345/StayNest}{\color{iconColor}\faGithub\ \color{linkColor}GitHub} \ \color{sepColor}$|$\ \href{https://staynest-dnrm.onrender.com}{\color{iconColor}\faExternalLink*\ \color{linkColor}Live Demo}}
           \resumeItemListStart
-            \resumeItem{Developed a full-stack accommodation marketplace adopting \textbf{MVC architecture} with full \textbf{CRUD} listings, geospatial filters, dynamic reviews, and responsive UI built with \textbf{Bootstrap 5}.}
-            \resumeItem{Engineered a collision-proof booking engine featuring interactive blackout calendar scheduling, \textbf{Razorpay} payment verification, and automated server-side PDF invoice generation using \textbf{PDFKit}.}
-            \resumeItem{Hardened backend application security with \textbf{Passport.js} session authentication, \textbf{Joi} input validation schemas, \textbf{Helmet} HTTP security headers, and \textbf{MongoDB Atlas} cloud storage.}
+            \resumeItem{Engineered an accommodation marketplace adopting MVC architecture with dynamic geospatial search filters, verified customer reviews, and responsive Bootstrap 5 styling.}
+            \resumeItem{Automated transactional billing using PDFKit server-side invoice generation, synchronized with Razorpay payment confirmation and collision-proof calendar scheduling.}
+            \resumeItem{Fortified backend application security utilizing Passport.js session authentication, Joi input validation schemas, Helmet HTTP security headers, and MongoDB Atlas.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Smart House Price Predictor} $|$ \emph{Python, Flask, XGBoost, Scikit-learn, Pandas, NumPy, Docker}}{\href{https://github.com/AyushKumar-12345/SmartHousePricePredictor}{\faGithub\ GitHub} $|$ \href{https://smarthousepricepredictor.onrender.com}{\faExternalLink*\ Live Demo}}
+          {\textbf{\color{primaryColor}Smart House Price Predictor} $|$ \emph{\color{subtextColor}Python, Flask, XGBoost, Scikit-learn, Pandas, NumPy, Docker}}{\href{https://github.com/AyushKumar-12345/SmartHousePricePredictor}{\color{iconColor}\faGithub\ \color{linkColor}GitHub} \ \color{sepColor}$|$\ \href{https://smarthousepricepredictor.onrender.com}{\color{iconColor}\faExternalLink*\ \color{linkColor}Live Demo}}
           \resumeItemListStart
-            \resumeItem{Developed a California real estate valuation engine achieving \textbf{^2 = 83.93\%$} and \textbf{17.52\% MAPE} (\,245 MAE) using an optimized \textbf{XGBoost} gradient-boosted ensemble trained on 20,000+ property records.}
-            \resumeItem{Integrated distribution-free \textbf{Split Conformal Prediction} delivering mathematically guaranteed \textbf{90\% confidence intervals} ($\pm\,169$), eliminating financial tail risk compared to traditional point estimates.}
-            \resumeItem{Implemented Explainable AI (\textbf{XAI}) feature attribution telemetry and defensive input validation, deploying via a low-latency ($<) \textbf{Flask REST API} containerized with \textbf{Docker} and automated \textbf{GitHub Actions CI}.}
+            \resumeItem{Trained an XGBoost regression model on 20,000+ California real estate records, achieving an 83.93\% R-squared score and 17.52\% MAPE (\$30,245 MAE).}
+            \resumeItem{Formulated distribution-free Split Conformal Prediction generating guaranteed 90\% confidence intervals within +/-\$68,169, mitigating extreme financial valuation risks.}
+            \resumeItem{Deployed a low-latency ($<$ 20ms) containerized Flask inference API with automated GitHub Actions CI pipelines and Explainable AI feature attribution.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{AgentIQ} $|$ \emph{Python, FastAPI, LangGraph, PostgreSQL, pgvector, React, TypeScript, Docker Compose}}{\href{https://github.com/AyushKumar-12345/AgentIQ}{\faGithub\ GitHub} $|$ \href{https://agentiq-frontend.onrender.com}{\faExternalLink*\ Live Demo}}
+          {\textbf{\color{primaryColor}AgentIQ} $|$ \emph{\color{subtextColor}Python, FastAPI, LangGraph, PostgreSQL, pgvector, React, TypeScript, Docker Compose}}{\href{https://github.com/AyushKumar-12345/AgentIQ}{\color{iconColor}\faGithub\ \color{linkColor}GitHub} \ \color{sepColor}$|$\ \href{https://agentiq-frontend.onrender.com}{\color{iconColor}\faExternalLink*\ \color{linkColor}Live Demo}}
           \resumeItemListStart
-            \resumeItem{Architected an enterprise agentic RAG platform using \textbf{FastAPI} and \textbf{LangGraph}, orchestrating bounded multi-step reasoning ($\le 4$ steps) with deterministic fallbacks, execution timeouts, and sub-second retrieval latency.}
-            \resumeItem{Implemented hybrid semantic search via \textbf{PostgreSQL 16} and \textbf{pgvector} (HNSW indexing, 0.45 cosine cutoff) with source citations, protected by a 5-layer SQL guardrail with \textbf{sqlglot AST parsing} and \textbf{RBAC}.}
-            \resumeItem{Constructed an enterprise-grade 3-pane UI in \textbf{React 18} and \textbf{TypeScript}, containerizing full-stack services with multi-stage \textbf{Docker} and establishing automated \textbf{GitHub Actions CI/CD} testing.}
+            \resumeItem{Designed an enterprise agentic RAG platform using FastAPI and LangGraph, orchestrating bounded multi-step reasoning within 4 steps and sub-second latency.}
+            \resumeItem{Pioneered hybrid vector search using PostgreSQL 16 and pgvector HNSW indexing, protected by a 5-layer SQL guardrail with sqlglot AST verification.}
+            \resumeItem{Constructed an enterprise 3-pane React 18 and TypeScript interface, collaborating across services with multi-stage Docker Compose and continuous CI/CD testing.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -162,9 +181,9 @@ Final-Year B.Tech Information Technology student at IIIT Bhubaneswar with strong
 %-----------ACHIEVEMENTS & CODING PROFILES-----------
 \section{Achievements \& Coding Profiles}
  \begin{itemize}[leftmargin=0.15in, label=\textbullet]
-    \resumeItem{Solved \textbf{200+ Data Structures \& Algorithms} problems in \textbf{Java} across \textbf{LeetCode} and \textbf{GeeksforGeeks}, demonstrating strong algorithmic optimization and problem-solving skills.}
-    \resumeItem{Architected, containerized, and deployed \textbf{4 production systems} (Feasto, StayNest, SmartHouse, AgentIQ) with \textbf{Docker}, \textbf{CI/CD} pipelines, and cloud hosting on \textbf{Render}.}
-    \resumeItem{Demonstrated sustained academic excellence with \textbf{98.2\% in Class X} and \textbf{88.6\% in Class XII}; actively pursuing B.Tech in IT at \textbf{IIIT Bhubaneswar}.}
+    \resumeItem{Solved \textbf{200+ Data Structures and Algorithms} problems in \textbf{Java} across \textbf{LeetCode} and \textbf{GeeksforGeeks}, mastering graph traversal and algorithmic optimization.}
+    \resumeItem{Containerized, deployed, and maintained \textbf{4 production applications} (Feasto, StayNest, SmartHouse, AgentIQ) using \textbf{Docker}, \textbf{CI/CD} pipelines, and cloud hosting on \textbf{Render}.}
+    \resumeItem{Achieved top academic distinction with \textbf{98.2\% in Class X} and \textbf{88.6\% in Class XII} while pursuing B.Tech in IT at \textbf{IIIT Bhubaneswar}.}
  \end{itemize}
 
 %-------------------------------------------
