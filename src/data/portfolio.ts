@@ -5,12 +5,12 @@ export const personalData = {
   bio: `Final-Year B.Tech Information Technology student at IIIT Bhubaneswar with strong foundations in Data Structures & Algorithms, Full-Stack Software Engineering (Java, MERN, Python), and Applied Generative AI/LLM Systems. Experienced in architecting scalable RESTful APIs, autonomous agent workflows (LangGraph), vector search pipelines (pgvector), and containerized microservices (Docker, CI/CD). Actively seeking Full-Time Software Development Engineer (SDE) and Graduate Engineer roles.`,
   location: "Bhubaneswar, Odisha, India",
   email: "ayushkumardandapat200@gmail.com",
-  phone: "+91 6371104472",
+  phone: "+91-6371104472",
   resumeUrl: "/Ayush_Kumar_Resume.pdf",
   avatar: `${import.meta.env.BASE_URL}mygallary.jpg`,
   social: {
     github: "https://github.com/AyushKumar-12345",
-    linkedin: "https://linkedin.com/in/ayush-kumar",
+    linkedin: "https://www.linkedin.com/in/ayush-kumar-97326636a/",
     email: "ayushkumardandapat200@gmail.com",
     leetcode: "https://leetcode.com/u/ayushkumardandapat/",
     gfg: "https://www.geeksforgeeks.org/profile/ayushkumardcypg",
@@ -19,7 +19,7 @@ export const personalData = {
 
 export const timelineData = [
   {
-    year: "Expected May 2026",
+    year: "2023 – 2027",
     title: "B.Tech in Information Technology",
     org: "IIIT Bhubaneswar",
     description: "Final-year B.Tech IT with strong foundations in Data Structures & Algorithms, Full-Stack Software Engineering (Java, MERN, Python), and Applied Generative AI/LLM Systems.",
@@ -40,7 +40,7 @@ export const timelineData = [
     type: "achievement",
   },
   {
-    year: "2020 – 2022",
+    year: "2020 – 2023",
     title: "Class XII (88.6%) & Class X (98.2%)",
     org: "Delhi Public School, Nalco Nagar, Angul",
     description: "Demonstrated sustained academic excellence with 98.2% in Class X and 88.6% in Class XII.",
@@ -52,7 +52,7 @@ export const educationData = [
   {
     degree: "Bachelor of Technology in Information Technology",
     institution: "International Institute of Information Technology (IIIT) Bhubaneswar",
-    year: "Expected May 2026",
+    year: "2023 – 2027",
     grade: "CGPA: 7.48",
     description: "Final-Year B.Tech in Information Technology with strong foundations in Data Structures & Algorithms, Full-Stack Software Engineering, and Applied Generative AI/LLM Systems.",
     highlights: ["CGPA: 7.48", "Final-Year IT", "DSA in Java", "GenAI / LangGraph"],
@@ -61,7 +61,7 @@ export const educationData = [
   {
     degree: "Class XII (Senior Secondary)",
     institution: "Delhi Public School, Nalco Nagar, Angul, Odisha",
-    year: "2020 – 2022",
+    year: "2020 – 2023",
     grade: "88.6%",
     description: "Class XII Senior Secondary completed with 88.6% academic distinction.",
     highlights: ["88.6%", "Mathematics", "Science"],
@@ -178,7 +178,7 @@ export const achievementsData = [
   {
     title: "Academic Excellence (98.2% & 88.6%)",
     subtitle: "IIIT Bhubaneswar & DPS",
-    year: "2020–2026",
+    year: "2020 – 2027",
     icon: "🎓",
     description: "Demonstrated sustained academic excellence with 98.2% in Class X and 88.6% in Class XII; Final-Year B.Tech IT student at IIIT Bhubaneswar.",
     color: "#6366F1",
