@@ -68,7 +68,7 @@
 
 </div>
 
-I'm **Ayush Kumar**, a Final-Year Information Technology undergraduate at the **International Institute of Information Technology (IIIT), Bhubaneswar** (Expected May 2026). 
+I'm **Ayush Kumar**, a Final-Year Information Technology undergraduate at the **International Institute of Information Technology (IIIT), Bhubaneswar** (2023 – 2027). 
 
 I specialize in **Full-Stack MERN Engineering**, **Autonomous AI Systems (LangGraph, pgvector)**, and **Algorithmic Problem-Solving in Java**. I architect resilient software systems that bridge clean user experience with enterprise-grade backend infrastructure, cryptographic payment integrity, and containerized microservices.
 
