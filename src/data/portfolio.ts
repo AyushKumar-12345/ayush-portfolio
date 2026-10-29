@@ -266,7 +266,7 @@ export const skillsData = {
     { name: "Scikit-Learn & XGBoost", level: 84 },
     { name: "Docker & Docker Compose", level: 86 },
     { name: "Git & GitHub Actions CI/CD", level: 90 },
-    { name: "Cloud Deployment (Render)", level: 92 },
+    { name: "Cloud Computing (Basics) & Render", level: 90 },
   ],
 }
 
